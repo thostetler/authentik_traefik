@@ -54,8 +54,6 @@ services:
     environment:
       - TZ=${TZ}
       - DOMAINNAME
-      ## Docker Secrets
-      - CF_DNS_API_TOKEN_FILE=/run/secrets/cf_dns_api_token
     volumes:
       - "$DOCKERDIR/appdata/traefik/config:/config" # traefik.yaml
       - "$DOCKERDIR/appdata/traefik/data:/data"     # acme.json defined in traefik.yaml

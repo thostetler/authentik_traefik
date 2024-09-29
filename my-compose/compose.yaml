@@ -23,12 +23,12 @@ networks:
 ###############################################################
 secrets:
   ## Cloudflare / Traefik
-  cf_email:
-    file: ${DOCKERDIR}/secrets/cf_email
+#  cf_email:
+#    file: ${DOCKERDIR}/secrets/cf_email
   # cf_api_key:
   #   file: ${DOCKERDIR}/secrets/cf_api_key
-  cf_dns_api_token:
-    file: ${DOCKERDIR}/secrets/cf_dns_api_token
+#  cf_dns_api_token:
+#    file: ${DOCKERDIR}/secrets/cf_dns_api_token
   ## Authentik
   authentik_postgresql_db:
     file: ${DOCKERDIR}/secrets/authentik_postgresql_db
