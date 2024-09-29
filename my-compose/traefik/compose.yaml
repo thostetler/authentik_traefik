@@ -49,8 +49,6 @@ services:
         protocol: tcp
         app_protocol: https
         mode: host
-    secrets:
-      - cf_dns_api_token
     environment:
       - TZ=${TZ}
       - DOMAINNAME
